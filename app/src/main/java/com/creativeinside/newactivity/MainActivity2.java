@@ -7,20 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
 
-    Button nextbtn;
+    Button backbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        nextbtn = findViewById(R.id.nextbtn);
+        setContentView(R.layout.activity_main2);
+        backbtn = findViewById(R.id.backbtn);
 
 
-        nextbtn.setOnClickListener(new View.OnClickListener() {
+        backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mIntent = new Intent(MainActivity.this,MainActivity2.class);
+                Intent mIntent = new Intent(MainActivity2.this,MainActivity.class);
                 startActivity(mIntent);
             }
         });
